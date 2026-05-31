@@ -1,17 +1,25 @@
 body{
     background-color: #734002;
     color: #f2d8c2;
-    max-width: 1440px;
+    /*
+    margin: 0;
+    padding: 0;
+    */
 }
 
 header{
     background-image: url(Images/Gemini_Generated_Image_ot0ut5ot0ut5ot0u.png);
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    align-content: end;
 }
 
-section{
+section:nth-of-type(1){
     /*align-content: center;*/
-
+    padding-top: 10%;
+    align-items: center;
 }
 
 .Projets{
@@ -24,7 +32,18 @@ section div summary{
     border-top-style: solid;
     border-top-width: 3px;
     margin: 0 300px 15px;
+    /*Affichage des éléments en ligne*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+
+section div details:nth-of-type(1) div:nth-of-type(1){
+    background-color: #a94a9b;
+    height: 650px;
+    padding-top: 10%;
+} 
 
 section:nth-of-type(2) {
     background-color: #d9b13b;
