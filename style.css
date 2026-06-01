@@ -18,7 +18,8 @@ header{
 
 section:nth-of-type(1){
     /*align-content: center;*/
-    padding-top: 10%;
+    padding-top: 20%;
+    padding-bottom: 10%;
     align-items: center;
 }
 
@@ -80,19 +81,112 @@ section div details:nth-of-type(6) div:nth-of-type(1){
 
 section:nth-of-type(2) {
     background-color: #d9b13b;
-    /*width: 1440px;*/
-    /*height: 1008px;*/
+    padding: 50px 50px;
+    height: 700px;
+}
+
+.informations-container{
+    height: 450px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+}
+
+.informations-container div{
+    text-align: center;
+    align-content: center;
+}
+
+.informations-container div:nth-of-type(1){
+    border-radius: 30px;
+    /*Début*/
+    grid-column-start: 1;
+    grid-row-start: 1;
+    /*Fin*/
+    grid-row-end: 2;
+    grid-column-end: 3;
+}
+
+.informations-container div:nth-of-type(2){
+    border-radius: 30px;
+    /*Début*/
+    grid-column-start: 3;
+    grid-row-start: 1;
+    /*Fin*/
+    grid-row-end: 2;
+    grid-column-end: 4;
+}
+
+.informations-container div:nth-of-type(3){
+    background-color: #8c512e;
+    border-radius: 30px;
+    /*Début*/
+    grid-column-start: 4;
+    grid-row-start: 1;
+    /*Fin*/
+    grid-row-end: 2;
+    grid-column-end: 6;
+}
+
+.informations-container div:nth-of-type(4){
+    border-radius: 30px;
+    /*Début*/
+    grid-column-start: 1;
+    grid-row-start: 2;
+    /*Fin*/
+    grid-row-end: 3;
+    grid-column-end: 2;
+}
+
+.informations-container div:nth-of-type(5){
+    background-color: #8c512e;
+    border-radius: 30px;
+    /*Début*/
+    grid-column-start: 2;
+    grid-row-start: 2;
+    /*Fin*/
+    grid-row-end: 3;
+    grid-column-end: 4;
+}
+
+.informations-container div:nth-of-type(6){
+    border-radius: 30px;
+    /*Début*/
+    grid-column-start: 4;
+    grid-row-start: 2;
+    /*Fin*/
+    grid-row-end: 3;
+    grid-column-end: 6;
+}
+
+.info-cachee{
+    display: none;
 }
 
 section:nth-of-type(2) h2{
     color: #402c21;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.contact-parent{
+    background-color: #734002;
 }
 
 footer{
+    padding-top: 5%;
     background-color: #a68863;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
 }
 
 .titre-footer{
-    font-size: 150px;
+    font-size: 175px;
     font-weight: 900;
 }
