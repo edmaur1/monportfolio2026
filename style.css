@@ -11,10 +11,27 @@ body{
 header{
     background-image: url(Images/Gemini_Generated_Image_ot0ut5ot0ut5ot0u.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    height: 450px;
+    height: 400px;
+    text-align: start;
+    text-transform: uppercase;
+    align-content: start;
+}
+
+header h1{
+    font-weight: 700;
+    font-size: 80px;
+}
+
+main h1{
     text-align: center;
-    align-content: end;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.mot-color{
+    color: #d9b13b;
 }
 
 section:nth-of-type(1){
@@ -255,4 +272,105 @@ footer nav li{
     letter-spacing: -20px;
     font-size: 310px;
     font-weight: 1000;
+
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Animation grid*/
+
+/*Rotation de la flèche*/
+summary figure img {
+    transition: transform 0.4s ease;
+}
+
+details[open] summary figure img {
+    transform: rotate(180deg);
+}
+
+/*effet glissemement*/
+.accordion-content {
+    transform: scaleY(0);
+    opacity: 0;
+    transform-origin: top;
+}
+
+details[open] .accordion-content {
+    animation: unfold 0.5s ease forwards;
+}
+
+@keyframes unfold {
+    from {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+/* État initial */
+.titre-visible {
+    opacity: 1;
+}
+
+.info-cachee {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+/* Déclenchement */
+.contact-parent:hover .titre-visible {
+    animation: sortieTitre 0.4s forwards;
+}
+
+.contact-parent:hover .info-cachee {
+    animation: entreeInfo 0.4s forwards;
+}
+
+/* Le titre monte et disparaît */
+@keyframes sortieTitre {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+/* Le contenu attend puis remonte */
+@keyframes entreeInfo {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    40% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
