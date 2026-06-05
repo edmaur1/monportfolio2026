@@ -44,39 +44,56 @@ section div summary{
     align-items: center;
 }
 
+.competence{
+    position: relative;
+    top: -100px;
+    text-align: end;
+    font-weight: 900;
+}
+
+.accordion-content{
+    padding: 0 3%;
+}
+
+.accordion-content article p{
+    margin-left: 25%;
+    width: 800px;
+    text-align: justify;
+}
+
 section div details:nth-of-type(1) div:nth-of-type(1){
     background-color: #a94a9b;
-    height: 650px;
     padding-top: 8%;
+    padding-bottom: 4%;
 } 
 
 section div details:nth-of-type(2) div:nth-of-type(1){
     background-color: #134a18;
-    height: 650px;
     padding-top: 8%;
+    padding-bottom: 4%;
 }
 
 section div details:nth-of-type(3) div:nth-of-type(1){
     background-color: #132848;
-    height: 650px;
     padding-top: 8%;
+    padding-bottom: 4%;
 } 
 
 section div details:nth-of-type(4) div:nth-of-type(1){
     background-color: #892424;
-    height: 650px;
+    padding-bottom: 4%;
     padding-top: 8%;
 } 
 
 section div details:nth-of-type(5) div:nth-of-type(1){
     background-color: #17484b;
-    height: 650px;
+    padding-bottom: 4%;
     padding-top: 8%;
 } 
 
 section div details:nth-of-type(6) div:nth-of-type(1){
     background-color: #3b430d;
-    height: 650px;
+    padding-bottom: 4%;
     padding-top: 8%;
 }
 
@@ -84,6 +101,18 @@ section:nth-of-type(2) {
     background-color: #d9b13b;
     padding: 50px 50px;
     height: 700px;
+}
+
+section:nth-of-type(2) div div div ul{
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+section:nth-of-type(2) div div div ul li{
+    display: flex;
+    flex-direction: row;
+    row-gap: 0;
+    justify-content: flex-start;
 }
 
 .informations-container{
@@ -151,6 +180,8 @@ section:nth-of-type(2) {
     /*Fin*/
     grid-row-end: 3;
     grid-column-end: 4;
+
+    padding: 5% 8%;
 }
 
 .informations-container div:nth-of-type(6){
@@ -173,6 +204,16 @@ section:nth-of-type(2) h2{
     font-weight: 700;
 }
 
+/*Les animations*/
+.contact-parent:hover h5 {
+    display: none;
+}
+
+.contact-parent:hover .info-cachee {
+    display: block;
+}
+/**/
+
 .contact-parent{
     background-color: #734002;
 }
@@ -189,14 +230,29 @@ footer{
 
 footer p{
     align-self: flex-end;
-    padding-right: 4em;
+    margin-right: 5em;
 }
 
 footer nav{
     align-self: center;
 }
 
+footer nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer nav li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 .titre-footer{
-    font-size: 175px;
-    font-weight: 900;
+    align-self: flex-start;
+    justify-content: flex-end;
+    letter-spacing: -20px;
+    font-size: 310px;
+    font-weight: 1000;
 }
