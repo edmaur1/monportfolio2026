@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Présentation Profil - Marcel Ekia</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #734002;
+            color: #f2d8c2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            display: flex;
+            gap: 50px;
+        }
+        .left-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-right: 1px solid rgba(242, 216, 194, 0.3);
+            padding-right: 40px;
+        }
+        .right-col {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+        .domain {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .profile-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .profile-subtitle {
+            font-size: 20px;
+            margin: 0 0 35px 0;
+            font-style: italic;
+            opacity: 0.85;
+        }
+        .section-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin: 0 0 15px 0;
+            font-weight: bold;
+        }
+        .content-block {
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0 0 15px 0;
+            text-align: justify;
+        }
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .badge {
+            border: 1px solid #f2d8c2;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-col">
+            <div class="icon">‹ / ›</div>
+            <div class="domain">Développement<br>Informatique</div>
+        </div>
+        
+        <div class="right-col">
+            <div class="profile-title">Marcel Ekia</div>
+            <div class="profile-subtitle">Étudiant en BUT Informatique — Recherche de Stage</div>
+            
+            <div class="content-block">
+                <div class="section-title">Philosophie &amp; Objectifs</div>
+                <p>
+                    Passionné par la création de liens forts avec les clients, ma démarche vise à comprendre précisément leurs besoins pour y apporter une réponse technique optimale. Dynamique et doté d'une grande adaptabilité, je recherche activement des défis stimulants qui me permettent de progresser au quotidien.
+                </p>
+                <p>
+                    Je souhaite collaborer avec des professionnels de l'informatique prêts à m'accueillir pour mettre à profit mes compétences en développement de sites web, d'applications ou de bases de données.
+                </p>
+            </div>
+            
+            <div class="content-block">
+                <div class="section-title">Technologies abordées en cursus</div>
+                <div class="tech-tags">
+                    <span class="badge">Bash</span>
+                    <span class="badge">C</span>
+                    <span class="badge">PHP</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">PostgreSQL</span>
+                    <span class="badge">Java</span>
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

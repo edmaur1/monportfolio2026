@@ -186,6 +186,15 @@ footer{
     align-content: stretch;
 }
 
+footer p{
+    align-self: flex-end;
+    padding-right: 4em;
+}
+
+footer nav{
+    align-self: center;
+}
+
 .titre-footer{
     font-size: 175px;
     font-weight: 900;
